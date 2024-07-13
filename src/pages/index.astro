@@ -1,0 +1,210 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Asignación 2: Alejandro Caraballo & Dionner Figueras">
+	
+	<main>
+		<h1>Asignación 2 </h1>
+
+		<h2>Comunicación Analógica</h2>
+	
+		<p>
+			En el ámbito de las telecomunicaciones, la comunicación analógica se refiere al
+			proceso de transmisión de información mediante señales continuas las cuales
+			varían en sus características físicas (amplitud, frecuencia o fase) para
+			representar la información que se desea transmitir. A diferencia de la
+			comunicación digital, la cual utiliza señales discretas, la comunicación
+			analógica replica de forma continua la información original, como si fuera una
+			copia analógica de la misma.
+		</p>
+		<br>
+		<h2>Ejemplos de comunicación analógica</h2>
+		<ul>
+		  <li>1. Telefonía: En las llamadas telefónicas tradicionales, la voz del hablante se
+			convierte en una señal eléctrica analógica, la cual varia en amplitud en
+			base a las variaciones de la voz. Esta señal es transmitida por medio de
+			cables o redes inalámbricas y se convierte nuevamente en sonido al llegar
+			al receptor, reproduciendo la voz del hablante</li>
+			<br>
+		  <li>2. Radio: Las emisoras de radio transmiten señales analógicas, las cuales
+			representan las ondas sonoras de la música, los programas de radio o la
+			voz de los locutores. Estas señales son interceptadas por las antenas de los
+			receptores, que las convierten nuevamente en sonido para el oyente.</li>
+			<br>
+		  <li>3. Televisión analógica:Es funciona de manera similar a la radio, pero en este
+			caso las señales analógicas representan imágenes en movimiento. Estas
+			señales son decodificadas por los televisores y reproducidas en pantalla
+			como imágenes y sonidos.
+			</li>
+		</ul>
+	
+		<h2>Características principales de la comunicación analógica</h2>
+		<ul>
+		  <li>Señales continuas: La información se transmite mediante señales que
+			varían de forma continua en el tiempo.
+			</li>
+			<br>
+		  <li>Modulación: La información original se "imprime" en una señal portadora
+			de mayor frecuencia, mediante un proceso llamado modulación. Existen
+			diferentes tipos de modulación, como la modulación de amplitud (AM), la
+			modulación de frecuencia (FM) y la modulación de fase (PM).</li>
+			<br>
+		  <li>Sensibilidad al ruido: Las señales analógicas son susceptibles a
+			interferencias y distorsiones, lo que puede afectar la calidad de la
+			transmisión.
+			</li>
+			<br>
+		  <li>Richness: La comunicación analógica permite transmitir información no
+			verbal como el tono de voz, las expresiones faciales y el lenguaje corporal,
+			lo que favorece la comprensión del mensaje.
+			</li>
+		</ul>
+	
+		<h2>Tipos de modulación de la comunicación analógica</h2>
+		<p>
+		  En las comunicaciones analógicas, la modulación es el proceso de
+		  "imprimir" información de una señal de banda base (que contiene la
+		  información original que se transmitirá) en una señal portadora de mayor
+		  frecuencia.
+		</p>
+		<br>
+		<h3>Modulación de amplitud (AM)</h3>
+		<ul>
+		  <li>Ventajas:</li>
+		  <ul>
+			<li>Simple de implementar y de bajo costo</li>
+			<li>Buena calidad de audio</li>
+		  </ul>
+		  <li>Desventajas:</li>
+		  <ul>
+			<li>Sensible al ruido y a las interferencias</li>
+			<li>Ocupa un ancho de banda mayor que la señal original</li>
+		  </ul>
+		</ul>
+	
+		<h3>Modulación de frecuencia (FM)</h3>
+		<ul>
+		  <li>Ventajas:</li>
+		  <ul>
+			<li>Muy resistente al ruido y a las interferencias</li>
+			<li>Mayor calidad de audio que la AM</li>
+			<li>Ocupa un ancho de banda menor que la AM para la misma calidad de audio</li>
+		  </ul>
+		  <li>Desventajas:</li>
+		  <ul>
+			<li>Más compleja de implementar que la AM</li>
+			<li>Requiere transmisores y receptores más costosos</li>
+		  </ul>
+		</ul>
+	
+		<h3>Modulación de fase (PM)</h3>
+		<ul>
+		  <li>Ventajas:</li>
+		  <ul>
+			<li>Muy resistente al ruido y a las interferencias</li>
+			<li>Puede transmitir información binaria de manera eficiente</li>
+		  </ul>
+		  <li>Desventajas:</li>
+		  <ul>
+			<li>Más compleja de implementar que la AM y la FM</li>
+			<li>Requiere receptores más complejos</li>
+		  </ul>
+		</ul>
+		<br>
+		<h2>Comunicación digital</h2>
+		<p>
+			El proceso de comunicación digital implica la transferencia de datos a través de
+			señales discretas que representan la información original mediante códigos
+			binarios formados por 0 y 1. A diferencia de la comunicación analógica, que se
+			basa en señales continuas con atributos físicos variables, la comunicación
+			digital convierte la información en bits separados. Este método permite un
+			procesamiento, almacenamiento y transmisión de datos más eficiente y
+			confiable.
+		</p>
+	  </main>
+	  <Footer />
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	h2{
+		font-size: 2rem;
+		font-weight: 600;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	p{
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1;
+		text-align: justify;
+		margin-bottom: 1em;
+	}
+	ul{
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1;
+		text-align: justify;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>
